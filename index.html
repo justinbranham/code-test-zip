@@ -6,10 +6,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+	<br/><br/>
+	<div class="container">
+		<h1>US State and City Lookup by ZIP code:</h2>
+		<br/>
+		<p>Try entering a US ZIP code like <b>43103</b>
+		<br/>
+
+		<form action="" method="" onsubmit="" class="">
+
+			<fieldset>
+
+				<br/>
+				<div>
+					<div id="zipbox" class="control-group">
+						<label for="zip"><b>Zip:</b></label>
+						<input type="text" class='fld' pattern="" oninvalid="setCustomValidity(' ')" name="zip" id="zip" placeholder="Type your ZIP code">
+						<button class='btn' onclick="zipApi()">Submit</button>
+						<br><br>
+					</div>	
+				</div>
+
+				<div>
+
+					<div class="resultbox" >
+						<label for="city"><b>City:</b></label>
+						<output type="text" name="city" id="city" placeholder="">
+					</div>
+
+					<div class="resultbox">
+						<label for="state"><b>State:</b></label>
+						<output type="text" name="state" id="state" placeholder="">
+					</div>
+
+					<div class="resultbox" >
+						<img src="" name="stateAbbrev" id="stateAbbrev" alt="">
+					</div>
+
+				</div>
+			</fieldset>
+			
+		</form>	
+	</div>
 	
 	<script src="script.js"></script>
+
 </body>
 </html>
 
